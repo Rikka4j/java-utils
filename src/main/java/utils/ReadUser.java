@@ -10,8 +10,8 @@ import java.util.ArrayList;
  * @author Administrator*/
 
 public class ReadUser {
-    public ArrayList<String> read() throws IOException {
-        String path = "C:\\sc\\city.txt";
+    public ArrayList<String> read(String path) throws IOException {
+
         File file = new File(path);
         BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
         String s = null;
